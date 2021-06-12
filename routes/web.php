@@ -13,6 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'StudentController@index');
+Route::get('/edit','StudentController@edit');
+Route::get('/add-mark','StudentController@add_marks');
+
+Route::get('/get-mark','StudentController@get_marks');
+
+Route::get('/get-allmark','StudentController@get_all_marks');
+
+Route::post('/save-student',['as'=>'save-student','uses'=>'StudentController@save_student']);
+Route::post('/delete-student',['as'=>'delete-student','uses'=>'StudentController@delete_student']);
+Route::post('/update-mark',['as'=>'update-mark','uses'=>'StudentController@update_marks']);

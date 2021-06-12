@@ -1,0 +1,18 @@
+.button-container{
+    float:right;
+}
+#addStudentModal{
+    display:none;
+}
+
+.mark-heading{
+    margin: 10px 0px;
+}
+.container-fluid{
+    line-height: 3;
+}
+
+.list-dialog{
+    max-width: 600px;
+}
+    
